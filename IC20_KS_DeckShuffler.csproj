@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65F409D6-83B5-45BC-8E2F-A437E85009A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IC20_KS_DeckShuffler</RootNamespace>
+    <AssemblyName>IC20_KS_DeckShuffler</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeckShuffler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeckShuffler.Designer.cs">
+      <DependentUpon>DeckShuffler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayingCard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DeckShuffler.resx">
+      <DependentUpon>DeckShuffler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ace-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jack-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jack-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jack-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jack-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\king-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\king-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\king-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\king-of-spades.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen-of-clubs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen-of-diamonds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen-of-hearts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\queen-of-spades.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
